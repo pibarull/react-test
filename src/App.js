@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import './style.css';
 import SocialCard from './SocialCard';
+import './App.css'
 
 export default function App() {
   const [users, setUsers] = useState([]);
@@ -13,7 +14,7 @@ export default function App() {
         const response = await fetch(
           'https://jsonplaceholder.typicode.com/users'
         );
-        userData = (await response.json()).results;
+        userData = await response.json();
         console.log(userData);
       } catch (error) {
         console.log(error);
@@ -26,10 +27,14 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Social Cards</h1>
-      {users.map((user, index) => (
-        <SocialCard userData={user} key={index} />
-      ))}
+      <h1>Home page</h1>
+      <div className="cards-container">
+        {users.map((user) => (
+          <SocialCard userData={user} key={user.id} />
+        ))}
+      </div>
     </div>
   );
 }
+
+export default App;

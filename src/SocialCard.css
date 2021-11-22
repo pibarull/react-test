@@ -3,23 +3,29 @@
   padding: 1.5rem;
   width: 250px;
   box-shadow: 0 0 28px 4px rgba(0,0,0,0.1);
-  transition: transform .3s ease;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: scale(1.1);
+  text-align: center;
 }
 
 .card__title {
-  font-weight: 800;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 
-.card__username {
-
+.card__website {
+  color: blue;
 }
 
-.card__website {
-  
+.circle {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(194, 196, 194);
+  border-radius: 50%;
+  margin: auto;
+}
+
+.text {
+  margin: auto;
+  font-weight:150;
+  font-size: 3rem;
 }
