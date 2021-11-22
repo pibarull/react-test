@@ -1,8 +1,8 @@
 import React from 'react';
 import './SocialCard.css';
-import Button from "./ButtonComponent";
+import Button from './ButtonComponent';
 import { useState } from 'react'
-import Popup from "./Popup";
+import Popup from './Popup';
 
 const SocialCard = ({ userData }) => {
   const [buttonPopup, setButtonPopup] = useState(false);
