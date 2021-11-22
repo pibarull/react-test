@@ -9,7 +9,7 @@ const SocialCard = ({ userData }) => {
 
   return (
     <div className = "card"> 
-      <div class="circle">
+      <div className="circle">
         <p class="text">{userData.name[0], userData.name[0]}</p>
       </div>
       <br></br>

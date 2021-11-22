@@ -15,7 +15,6 @@ export default function App() {
           'https://jsonplaceholder.typicode.com/users'
         );
         userData = await response.json();
-        console.log(userData);
       } catch (error) {
         console.log(error);
         userData = [];
