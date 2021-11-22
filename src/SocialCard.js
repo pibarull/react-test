@@ -1,6 +1,5 @@
 import React from 'react';
 import './SocialCard.css';
-import Button from './ButtonComponent';
 import { useState } from 'react'
 import Popup from './Popup';
 
