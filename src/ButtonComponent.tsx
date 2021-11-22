@@ -6,7 +6,7 @@ interface Props {
   children?: React.ReactNode;
   height: string;
   onClick: () => void;
-  radius: string
+  radius: string;
   width: string;
   cursor: string;
 }
