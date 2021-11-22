@@ -29,3 +29,16 @@
   font-weight:150;
   font-size: 3rem;
 }
+
+.button {
+  background-color: deepskyblue;
+  height: 50px;
+  border-radius: 10px;
+  border-color: deepskyblue;
+  width: 200px;
+  cursor: pointer;
+}
+
+.button__text {
+  color: white;
+}

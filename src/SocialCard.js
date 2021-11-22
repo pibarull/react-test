@@ -24,19 +24,10 @@ const SocialCard = ({ userData }) => {
         {userData.website}
       </div>
       <br></br>
-      <Button 
-        border="none"
-        color= "deepskyblue"
-        height = "50px"
-        onClick={() => setButtonPopup(true)}
-        radius = "5%"
-        width = "200px"
-        cursor = "pointer"
-        children = "MORE DETAILS"
-      />
-
+      <button className = "button" onClick={() => setButtonPopup(true)}> 
+      <p className = "button__text">MORE DETAILS </p>
+      </button>
       <Popup user = {userData} trigger={buttonPopup} setTrigger = {setButtonPopup}> 
-
       </Popup>
     </div>
   );
